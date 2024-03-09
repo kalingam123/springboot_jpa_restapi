@@ -34,6 +34,7 @@ public class AlienController {
 	
 	@GetMapping("jpa/aliens")
 	public List<Alien> getAlien(){
+		System.out.println("JPA/Aliens");
 		List<Alien> aliens=(List<Alien>) alienRepository.findAll();
 		return aliens;
 	}
